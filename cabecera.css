@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+:root {
+  --background: rgb(0, 0, 0, 0.7);
+  --fuente: #ffffff;
+  --boton: #23a3b4;
+  --boton2: #23a3b4a4;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.fondo {
+  background: url(fondo2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  transition: all 0.9s ease-in-out 0s;
+}
+.logo {
+  order: 1;
+  width: 130px;
+  display: flex;
+  margin-right: auto;
+  padding: 10px 15px;
+  transition: all 0.9s ease-in-out 0s;
+}
+
+li,
+a {
+  color: var(--fuente);
+  text-decoration: none;
+  font-family: "Pangolín", Pangolin;
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav {
+  order: 2;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  padding: 0 25px;
+  transition: all 0.9s ease-in-out 0s;
+}
+.nav li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav li a {
+  color: var(--fuente);
+  transition: all 0.5s ease 0s;
+}
+
+.nav li a:hover {
+  color: var(--boton);
+  text-shadow: 0.5px 0.5px grey;
+}

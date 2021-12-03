@@ -1,0 +1,68 @@
+:root {
+  --background: #484848;
+  --boton: #3ea1c1;
+  --fuente: #f9f9f9;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0, 0.85);
+  background-attachment: fixed;
+}
+*::selection {
+  background-color: #eceef1;
+  color: black;
+}
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  padding: 0 5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url(fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+p {
+  color: var(--fuente);
+  justify-content: flex-start;
+  text-align: center;
+}
+.opaco {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(175, 175, 175);
+  margin: 10px 20%;
+  padding: 10px 20px;
+  border: 0.25rem white;
+  outline: 0;
+  overflow: hidden;
+}
+
+.nav_cab li {
+  display: inline-block;
+  padding: 0 30px;
+  opacity: 1;
+}
+
+.nav_cab li a {
+  color: var(--fuente);
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  opacity: 1;
+  display: flex;
+}
+
+.nav_cab li a:hover {
+  color: var(--boton);
+}

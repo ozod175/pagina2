@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+:root {
+  --fondo: rgba(238, 238, 238, 0.342);
+  --fuente: #ffffff;
+  --boton: #23a3b4;
+  --boton2: #23a3b491;
+  --boton3: #54d6e7;
+}
+span::selection {
+  background-color: rgba(238, 238, 238, 0.342);
+}
+a::selection {
+  background-color: rgba(238, 238, 238, 0.342);
+}
+button::selection {
+  background-color: rgba(238, 238, 238, 0.596);
+}
+.contenedor {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: "Open Sans Condens", sans-serif;
+}
+.contenedor2 {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: "Open Sans Condens", sans-serif;
+}
+.contenedor span {
+  text-transform: uppercase;
+  display: block;
+}
+.titulo {
+  color: var(--fuente);
+  font-size: 68px;
+  font: weight 600;
+  letter-spacing: 9px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: letras 2s 1;
+}
+.tituloo {
+  font-size: 30px;
+  color: var(--boton3);
+  animation: letra2 2s 1;
+  transition: all 3s ease-in-out 0s;
+}
+
+.titulooo {
+  font-size: 50px;
+  color: var(--boton3);
+  animation: letra2 2s 1;
+  transition: all 4s ease-in-out 0s;
+}
+
+a {
+  color: lightblue;
+  background-color: inherit;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  animation: boton 3s 1;
+  transition: animation 3s ease-in-out 0s;
+}
+
+.btn {
+  text-decoration: none;
+  border: inherit;
+  position: relative;
+  overflow: hidden;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(61, 64, 241, 0.4);
+  border: 1px solid rgb(104, 106, 252);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(116, 118, 248, 0.4),
+    transparent
+  );
+  transition: all 550ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+@keyframes letras {
+  0% {
+    opacity: 0.3;
+    margin-bottom: 15px;
+  }
+  15% {
+    background-color: rgba(238, 238, 238, 0.342);
+  }
+
+  30% {
+    letter-spacing: 20px;
+    margin-bottom: 12px;
+  }
+  85% {
+    letter-spacing: 10px;
+    margin-bottom: 80px;
+  }
+}
+
+@keyframes letra2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    letter-spacing: 15px;
+  }
+  85% {
+    letter-spacing: 5px;
+    background-color: rgba(238, 238, 238, 0.342);
+  }
+}
+
+@keyframes letra3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    letter-spacing: 30px;
+  }
+  85% {
+    letter-spacing: 15px;
+    background-color: rgba(238, 238, 238, 0.342);
+  }
+}
+
+@keyframes boton {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    letter-spacing: 20px;
+  }
+  65% {
+    letter-spacing: 10px;
+  }
+}
